@@ -1,15 +1,26 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Mango",
+  "name": "The Mango Cat | You found him!",
+  "description": "A website for those who have had the pleasure or misfortune of stumbling upon a wild Mango.",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
+    },
+    {
+      "src": "mango-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "mango-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
+  "display": "minimal-ui",
+  "theme_color": "rgba(253,187,45,0.8)",
   "background_color": "#ffffff"
 }
