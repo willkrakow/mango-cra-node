@@ -85,7 +85,6 @@ export default function Form() {
           <Button disabled={loading ? true : false} type="submit">
             Send message
           </Button>
-          }
         </form>
       )}
       {sent && (

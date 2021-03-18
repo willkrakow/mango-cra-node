@@ -33,7 +33,6 @@ export default function Pics() {
     const [ loading, setLoading ] = useState(true)
 
     useEffect(() => {
-        const rect = galleryRef.current.getBoundingClientRect()
         const windowWidth = window.innerWidth;
         switch (windowWidth){
             case windowWidth > 1000:
@@ -47,7 +46,7 @@ export default function Pics() {
                 break;
         }
         setLoading(false)
-    })
+    }, [loading])
 
     const imageIds = [
       {

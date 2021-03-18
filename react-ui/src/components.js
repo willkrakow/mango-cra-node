@@ -134,19 +134,6 @@ const fadeout = keyframes`
 }
 `;
 
-const flyin = keyframes`
-0% {
-  opacity: 0.1;
-  transform: scale(5.0);
-}
-
-100% {
-  font-size: 48px;
-  opacity: 1.0;
-  transform: scale(1.0);
-}
-`
-
 const appear = keyframes`
 0% {
   opacity: 0.0;
