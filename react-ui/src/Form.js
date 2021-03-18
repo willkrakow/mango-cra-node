@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { PlainText, FormWrapper, TextArea, TextInput, Button, LocationIcon, SmallText, Loader } from './components'
-
+import { PlainText, FormWrapper, TextArea, TextInput, Button, LocationIcon, SmallText, Loader, SecondButton } from './components'
+import Add from '@material-ui/icons/Add'
 
 export default function Form() {
 
@@ -40,7 +40,10 @@ export default function Form() {
     <>
       <h3>Contact my parents</h3>
       {location.length > 0 ? null : (
-        <Button onClick={handleClick}>Include your location</Button>
+        <SecondButton onClick={handleClick}>
+          <Add fontSize="inherit" htmlColor="inherit" />
+          Add your location
+        </SecondButton>
       )}
       <Loader loading={loading} />
       {location.length > 0 && (

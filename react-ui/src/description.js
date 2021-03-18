@@ -23,7 +23,7 @@ const Description = () => (
       style={{
         marginTop: "1rem",
         display: "flex",
-        justifyContent: "space-evenly",
+        justifyContent: "center",
         alignItems: "center",
       }}
     >
@@ -31,17 +31,17 @@ const Description = () => (
         href="https://www.google.com/maps/dir/?api=1&destination=231+W+Margaret+Ln%2C+Hillsborough%2C+NC+27278"
         alt="Get directions to Mango's house"
         icon={
-          <MapSharp htmlColor="rgba(34, 193, 195, 0.8)" fontSize="inherit" />
+          <MapSharp htmlColor="inherit" fontSize="inherit" />
         }
-        text=""
+        text="Take me home"
       />
       <IconLink
         href="tel:+1-919-923-9882"
         alt="Call my parents"
         icon={
-          <PhoneSharp htmlColor="rgba(34, 193, 195, 0.8)" fontSize="inherit" />
+          <PhoneSharp htmlColor="inherit" fontSize="inherit" />
         }
-        text=""
+        text="Call my parents"
       />
     </div>
     <FlexWrapper>

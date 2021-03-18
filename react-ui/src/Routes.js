@@ -3,7 +3,10 @@ import Pics from './Pics'
 import Description from './description'
 import { Button, Nav, NavWrap, NavItem, Section } from './components'
 import Form from './Form'
+import Footer from './Footer'
+
 import './styles.css'
+
 export default function Routes() {
 
     const formRef = useRef(null);
@@ -38,6 +41,9 @@ return (
     </Section>
     <Section ref={picsRef}>
         <Pics />
+    </Section>
+    <Section>
+      <Footer />
     </Section>
   </div>
 );}

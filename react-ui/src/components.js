@@ -35,7 +35,8 @@ border-radius: 8px;
 transition: all 0.3s ease;
 &:hover {
   background: rgba(253,187,45,1.0);
-
+  box-shadow: 0px 3px 0 rgba(253,187,45,0.2);
+  transform: translateY(-1px);
 }
 `;
 
@@ -208,10 +209,47 @@ export const LandingPage = () => {
   </Landing>
   )};
 
+  export const SecondButton = Styled.button`
+    background: transparent;
+    border: 5px solid rgba(34, 193, 195, 0.8);
+    background: rgba(34, 193, 195, 0.2);
+    color: rgb(34, 193, 195);
+    padding: 12px 8px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border-radius: 16px;
+    cursor: pointer;
+    &:hover {
+      background: rgba(34, 193, 195, 1);
+      box-shadow: 0px 3px 0 rgba(24, 193, 195, 0.2);
+      transform: translateY(-1px);
+      color: rgba(255, 255, 255, 0.8)
+
+    }
+  `;
+
+  const IconSpan = Styled.span`
+    font-size: 3rem;
+    color: rgb(34, 193, 195);
+    width: 100%;
+    display: block;
+    &:hover{
+      color: rgba(255, 255, 255, 0.8)!important;
+    }
+  `
 
 export const IconLink = (props) => (
-<a href={props.href} alt={props.alt} style={{ fontSize: "4rem", display: "block" }}>{props.text}{props.icon || ""}</a>
-)
+  <a href={props.href} alt={props.alt} style={{ display: "inline-block", width: "100%", margin: "0 16px" }}>
+    <SecondButton>
+      <IconSpan>
+        {props.icon || ""}
+      </IconSpan>
+      {props.text}
+    </SecondButton>
+  </a>
+);
 
 
 
