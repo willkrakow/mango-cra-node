@@ -229,7 +229,9 @@ h5 {
 
 h3 {
   font-size: 1.8rem;
-
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgb(99 34 195 / 50%);
 }
 
 
@@ -237,3 +239,5 @@ h3 {
   scroll-behavior: smooth;
   max-width: 100%;
 }
+
+

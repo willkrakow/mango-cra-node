@@ -51,8 +51,8 @@ const Description = () => (
         </FlexChild>
         <FlexChild>
         <p style={{ textAlign: "left" }}>
-          My name's Mango, and I like in Hillsborough, NC on Margaret Lane. I
-          live to hunt bugs and bully my brother (he's a doggo) and play frogger
+          My name's Mango, and I live in Hillsborough, NC on West Margaret Lane. I
+          like to hunt bugs and bully my brother (he's a doggo) and play frogger
           in the street.
         </p>
         </FlexChild>
