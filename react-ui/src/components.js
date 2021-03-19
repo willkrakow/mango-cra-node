@@ -85,6 +85,7 @@ export const FlexWrapper = Styled.div`
 display: flex;
 justify-content: center;
 min-width: 50%;
+overflow-y: scroll;
 flex-wrap: wrap;
 `;
 

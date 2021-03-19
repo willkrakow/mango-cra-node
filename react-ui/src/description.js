@@ -48,14 +48,20 @@ const Description = () => (
       <FlexChild>
         <h3 style={{ textAlign: "left" }}>Hi hooman.</h3>
         <p style={{ textAlign: "left" }}>Hope you're doing alright today.</p>
+        </FlexChild>
+        <FlexChild>
         <p style={{ textAlign: "left" }}>
           My name's Mango, and I like in Hillsborough, NC on Margaret Lane. I
           live to hunt bugs and bully my brother (he's a doggo) and play frogger
           in the street.
         </p>
+        </FlexChild>
+        <FlexChild>
         <p style={{ textAlign: "left" }}>
           If you're reading this, you probably found me being a bully or a good hunter or a bad froggerer. Oops.
         </p>
+        </FlexChild>
+        <FlexChild>
         <h3 style={{ textAlign: "left" }}>What to do with me</h3>
         <ul style={{ textAlign: "left" }}>
           <li>
@@ -69,6 +75,8 @@ const Description = () => (
           <li>More snoogles pls.</li>
           <li>Don't feed me. I don't know when to stop. Gosh darn I love food.</li>
         </ul>
+        </FlexChild>
+        <FlexChild>
         <h3 style={{ textAlign: "left" }}>Why the frick am I out here</h3>
         <p style={{ textAlign: "left" }}>
           Because I like being outside, duh. Sunshine is good for doggos and
