@@ -90,7 +90,7 @@ flex-wrap: wrap;
 `;
 
 export const FlexChild = Styled.div`
-flex: 1 1 400px;
+flex: 1 1 100%;
 `;
 
 export const FormWrapper = Styled.div`
