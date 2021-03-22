@@ -1,6 +1,6 @@
 {
-  "name": "heroku-cra-node",
-  "description": "web app made of create-react-app UI + Node API",
+  "name": "mangod-cra-node",
+  "description": "A web app made of create-react-app UI + Node API, meant to track down our stupid cat.",
   "scripts": {
   },
   "env": {
