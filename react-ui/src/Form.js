@@ -8,16 +8,22 @@ export default function Form() {
   const [location, setLocation] = useState([]);
   const [sent, setSent] = useState(false);
   const [ loading, setLoading ] = useState(false);
+  const [ errorMessage, setErrorMessage ] = useState(false)
   const { register, watch, errors, handleSubmit, getValues } = useForm();
   const handleClick = () => {
       setLoading(true)
       if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(success);
+        navigator.geolocation.getCurrentPosition(success, failure);
       }
 
       function success(position) {
           console.log(position)
         setLocation([position.coords.latitude, position.coords.longitude]);
+        setLoading(false)
+      }
+
+      function failure(){
+        setErrorMessage(true)
         setLoading(false)
       }
   }
@@ -55,6 +61,7 @@ export default function Form() {
           </p>
         </>
       )}
+      {errorMessage && <p>Sorry, for some reason we can't locate you.</p>}
       {!sent && (
         <form action="" method="POST" onSubmit={handleSubmit(onSubmit)}>
           <FormWrapper>

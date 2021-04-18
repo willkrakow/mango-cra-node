@@ -5,6 +5,7 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -206,16 +207,16 @@ template {
 
 p,
 li {
-  color: rgba(26, 43, 54, 0.9);
+  color: rgba(16, 23, 34, 1.0);
   font-weight: 200;
-  line-height: 1.6rem;
-  font-size: 1.4rem;
+  line-height: 2.2rem;
+  font-size: 1.6rem;
   font-family: 'Indie Flower', cursive;
   padding: 0 16px;
 }
 
 li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
 }
 h1,
 h2,
@@ -228,7 +229,7 @@ h5 {
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 2.25rem;
   text-decoration: underline;
   text-decoration-style: wavy;
   text-decoration-color: rgb(99 34 195 / 50%);

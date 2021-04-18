@@ -283,6 +283,8 @@ transition: all 0.3s ease;
 export const Section = Styled.div`
 margin: 2rem auto;
 padding: 0.5rem;
+padding-top: 2rem;
+overflow: hidden;
 `
 
 
