@@ -36,7 +36,7 @@ return (
     <Section ref={homeRef}>
       <Description />
     </Section>
-    <Section ref={formRef}>
+    <Section ref={formRef} id="contactform">
         <Form />
     </Section>
     <Section ref={picsRef}>

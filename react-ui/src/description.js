@@ -39,9 +39,9 @@ const Description = () => (
     <div
       style={{
         marginTop: "1rem",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
+        display: "grid",
+        gridTemplateColumns: '1fr 1fr',
+        gridColumnGap: '8px',
       }}
     >
       <IconLink
@@ -83,7 +83,7 @@ const Description = () => (
             wait.. okay it was something like that.)
           </EmojiItem >
           <EmojiItem emoji="😸">
-            Let my parents know where I am using the form below ⬇️. My mom is Laura and my Dad is Will and they are LAME but they feed me so that's cool I guess. If I'm not far from Bellevue, no need to worry them (unless of course you took some fab photos of me that you'd like to share).
+            Let my parents know where I am using the <a alt="Contact Mango's parents" href="#contactform" style={{ textDecorationStyle: 'wavy', textDecorationColor: 'rgb(34, 193, 195)' }}>form below ⬇️</a>. My mom is Laura and my Dad is Will and they are LAME but they feed me so that's cool I guess. If I'm not far from Bellevue, no need to worry them (unless of course you took some fab photos of me that you'd like to share).
           </EmojiItem >
           <EmojiItem emoji="😸">More snoogles pls.</EmojiItem >
           <EmojiItem emoji="😸">Don't feed me. I don't know when to stop. Gosh darn I love food.</EmojiItem>

@@ -215,6 +215,7 @@ export const LandingPage = () => {
     background: rgba(34, 193, 195, 0.2);
     color: rgb(34, 193, 195);
     padding: 12px 8px;
+    flex: 0 0 100%;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     display: inline-block;
@@ -241,7 +242,7 @@ export const LandingPage = () => {
   `
 
 export const IconLink = (props) => (
-  <a href={props.href} alt={props.alt} style={{ display: "inline-block", width: "100%", margin: "0 16px" }}>
+  <a href={props.href} alt={props.alt} style={{ display: "flex", width: "100%", textDecoration: 'none' }}>
     <SecondButton>
       <IconSpan>
         {props.icon || ""}
@@ -254,19 +255,21 @@ export const IconLink = (props) => (
 
 
 export const Nav = Styled.ul`
-display: flex;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-column-gap: 8px;
 justify-content: space-evenly;
 align-items: center;
-padding: 0;
+padding: 0 8px;
 `;
 
 export const NavItem = Styled.li`
 display: flex;
 text-align: center;
 margin: auto;
+width: 100%;
 padding: 0;
 justify-content: center;
-flex-basis: 110px;
 `;
 
 export const NavWrap = Styled.nav`
