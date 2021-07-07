@@ -50,6 +50,34 @@ export default function Pics() {
 
     const imageIds = [
       {
+        id: "tallgrass.jpg",
+        desc: "Shhh. I'm sneakin' here."
+      },
+      {
+        id: "cruisin.jpg",
+        desc: "I do not like the zoom box."
+      },
+      {
+        id: "fence.jpg",
+        desc: "Hallo tiny hooman."
+      },
+      {
+        id: "catpark.jpg",
+        desc: "Just me and the doggo. Chillin in the catpark."
+      },
+      {
+        id: "windowview.jpg",
+        desc: "Another day another collar."
+      },
+      {
+        id: "riverrat.jpg",
+        desc: "I'd like to be carried home now plz."
+      },
+      {
+        id: "lickintoes.jpg",
+        desc: "My toes always got the most delicious grime in them."
+      },
+      {
         id: "bathtub.jpg",
         desc: "Just a looser takin a bath",
       },
